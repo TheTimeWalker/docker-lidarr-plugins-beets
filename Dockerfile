@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver-labs/prarr:lidarr-plugins-2.13.2.4686
+FROM ghcr.io/linuxserver-labs/prarr:lidarr-plugins-2.14.1.4723
 
 ARG LIDARR_VERSION
 
