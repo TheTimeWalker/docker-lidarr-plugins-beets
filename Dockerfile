@@ -45,8 +45,6 @@ RUN echo "**** install packages ****" && \
     python3 -m venv /opt/venv && \
     source /opt/venv/bin/activate && \
     pip install -U --no-cache-dir --verbose pip wheel && \
-    pip config set global.index-url http://192.168.1.104:3141/root/pypi/+simple/ && \
-    pip config set global.trusted-host 192.168.1.104 && \
     pip install -U --no-cache-dir --verbose \
       beautifulsoup4 \
       beets \
