@@ -2,12 +2,6 @@ FROM ghcr.io/linuxserver-labs/prarr:lidarr-plugins-3.1.1.4884
 
 ARG LIDARR_VERSION
 
-# Copy pre-compiled binaries from the build context
-COPY mp3gain mp3val /usr/bin/
-
-# Make the binaries executable
-RUN chmod +x /usr/bin/mp3gain /usr/bin/mp3val
-
 # Install build and runtime packages, and cleanup
 RUN echo "**** install packages ****" && \
     apk add --no-cache --virtual=build-dependencies \
